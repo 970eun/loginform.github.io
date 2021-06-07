@@ -1,0 +1,146 @@
+!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지 디자인</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{
+            text-decoration:none;
+            display:block;
+            color:#333;
+        }
+
+
+        .bg {
+            position:relative;
+        }
+
+        .wrap {
+            width:406px;
+            /* background-color:royalblue; */
+            position:absolute;
+            left:1222px;
+            top:330px;
+        }
+
+        
+        fieldset {
+            border:0;
+        }
+
+        legend {
+            position:absolute;
+            left:-999999999px;
+        }
+
+        .wrap label {
+            position:absolute;
+            left:-999999999px;
+        }
+
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border:1px solid #757575;
+            outline:1px solid #333;
+        }
+
+
+        input[type="text"],
+        input[type="password"] {
+            width:406px;
+            height:39px;
+            font-size:16px;
+            /* text-align:center; */
+            border:0;
+            border-bottom:1px solid #333;
+            
+            box-sizing:border-box; 
+            background-color:transparent;
+            line-height:21px;
+        }
+
+        input[type="password"] {
+            margin-top:32px;
+            box-sizing:border-box; 
+            
+        }
+        ::placeholder {
+            text-align: center;
+            color:rgba(0,0,0,.5);
+        }
+        
+
+
+        button {
+            width:381px;
+            height:49px;
+            border-radius:28px;
+            font-size:21px;
+            text-align:center;
+            color:#333;
+            margin:10px 0;
+            background-color:transparent;
+            border:1px solid #333;
+        }
+
+        .wrap .a01 {
+            background-color:#757575;
+            color:#fff;
+        }
+
+        .but {
+            width:381px;
+            margin:0 auto;
+            margin-top:16px;
+        }
+
+        .wrap p {
+            text-align:center;
+            font-size:16px;
+            color:#333;
+            margin-top:35px;
+
+        }
+    </style>
+</head>
+<body>
+    
+<div class="bg">
+    <img src="img/login02.jpg" alt="dog"/>
+</div>
+    
+    <div class="wrap">
+        
+        <form action="" method="post">
+            <fieldset>
+                <legend>로그인 페이지</legend>
+                <div>
+                    <label for="id">E-mail</label>
+                    <input type="text" id="id" placeholder="Enter Your E-Mail">
+                </div>
+                <div>
+                    <label for="pass">password</label>
+                    <input type="password" id="pass" placeholder="Password">
+                </div>
+                <div class="but">
+                    <button class="a01">Log In</button>
+                    <button>Sign Up</button>
+                    <button>Naver</button>
+                    <button>KaKao</button>
+                </div>
+                
+
+                <p><a href="#">FORGOT YOUR PASSWORD?</a></p>
+            </fieldset>
+        </form>
+        
+    </div>
+
+    
+</body>
+</html>

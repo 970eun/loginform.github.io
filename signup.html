@@ -1,0 +1,113 @@
+!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 회원가입 페이지</title>
+    <link href="css/signup.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="bg">
+        <img src="img/signup01.jpg" alt="sign up">
+    </div>
+
+
+    <div id="form">
+        <form action="" method="post" autocomplete="off">
+            <fieldset>
+                <legend>개인정보</legend>
+                <div class="box01">
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" class="box001" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="id">id</label>
+                        <input type="text" id="id" placeholder="ID">
+                    </div>
+                    <div>
+                        <label for="pass">password</label>
+                        <input type="password" id="pass" placeholder="Password">
+                    </div>
+                    <div>
+                        <label for="mail">email</label>
+                        <input type="text" id="mail" placeholder="E-Mail">
+                    </div>
+                </div>
+                
+                <div class="check">
+                    <div>
+                        <label>Nationality</label>
+                        <div>
+                            <div class="ra01">
+                                <input id="a01" type="radio" name="nation" value="local">
+                                <label for="a01"></label>
+                                <span>Local</span>
+                            </div>
+                            <div>
+                                <input id="a02" type="radio" name="nation" value="foreigner">
+                                <label for="a02"></label>
+                                <span>Foreigner</span>
+                            </div>
+                            
+                        </div>     
+                    </div>
+                    <div>
+                        <label>gender</label>
+                        <div>
+                            <div class="ra02">
+                                <input id="b01" type="radio" name="gender" value="man">
+                                <label for="b01"></label>
+                                <span>Man</span>
+                            </div>
+                            <div>
+                                <input id="b02" type="radio" name="gender" value="woman">
+                                <label for="b02"></label>
+                                <span>Woman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="addr">
+                    
+                      
+                    <div>
+                        <label>Address Search</label>
+                        <input type="button" value="Address Search">
+                        <input type="text" name="addr" id="addr01" class="addr01">
+                    </div>
+                    <input type="text" name="addr">
+                </div>
+
+                <div class="agree">
+                    <p>Authenticate your mobile phone</p>
+                    <div>
+                        <label>phone</label>
+                        <input type="text" name="phone" class="agr01" placeholder="Please enter your mobile number">
+                        <input type="button" value="Sand Code">
+                        <input type="text" name="phone" class="agr02" placeholder="Enter Code">
+                    </div>
+                </div>
+
+                <div class="acp">
+                    <p>Accept the term and conditions</p>
+                    <textarea cols="40"></textarea>
+                    <div class="accept">
+                        <input type="checkbox" id="agree" >
+                        <label>I agree</label>
+                    </div>     
+                </div>
+                <div class="create">
+                    <p>
+                        <a href="#">Already have an account? Sign In</a>
+                    </p>
+                    <button>Create Account</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
