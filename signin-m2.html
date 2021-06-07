@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 로그인 페이지</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{
+            text-decoration:none;
+            display:block;
+            color:#333;
+        }
+
+        .bg {
+            position:relative;
+        }
+
+        fieldset {
+            border:0;
+        }
+
+        .wrap {
+            width:290px;
+            /* background-color:tomato; */
+            position:absolute;
+            top:330px;
+            left:44px;
+        }
+
+        legend {
+            position:absolute;
+            left:-99999999px;
+        }
+
+        label{
+            position:absolute;
+            left:-99999999px;
+        }
+
+
+        input[type="text"]:focus, 
+        input[type="password"]:focus {
+            outline:1px solid #fff;
+            border:1px solid #757575;
+        }
+
+        input[type="text"], 
+        input[type="password"] {
+            width:290px;
+            height:29px;
+            line-height:29px;
+            background-color:transparent;
+            border:0;
+            border-bottom:1px solid #ccc;
+            box-sizing:border-box;
+            color:#fff;
+            /* margin-bottom:10px; */
+        }
+
+
+        input[type="password"] {
+            margin-top:20px; 
+            box-sizing:border-box;
+        }
+
+
+        ::placeholder {
+            text-align:center;
+            color:rgba(255, 255, 255, 0.5);
+        }
+
+
+        .but {
+            width:272px;
+            margin:0 auto;
+        }
+
+
+        button{
+            width:272px;
+            height:35px;
+            line-height:35px;
+            border-radius:28px;
+            text-align:center;
+            font-size:16px;
+            color:#fff;
+            background-color:transparent;
+            border:1px solid #ccc;
+            margin:10px 0;
+        }
+
+
+    
+        .wrap .a01 {
+            background-color:#fff;
+            color:#757575;
+        }
+
+        .wrap p {
+            font-size:9px;
+            text-align:center;
+            
+        }
+
+        .wrap p a {
+            color:#ccc;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="bg">
+        <img src="img/login03.jpg" alt="dog">
+    </div>
+
+    <div class="wrap">
+        <form action="" method="post">
+            <fieldset>
+                <legend>로그인 페이지</legend>
+                <div>
+                    <label>Email</label>
+                    <input type="text" id="id" placeholder="Enter Your E-Mail">
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" id="pass" placeholder="Password">
+                </div>
+                <div class="but">
+                    <button class="a01">Log In</button>
+                    <button>Sign Up</button>
+                    <button>Naver</button>
+                    <button>KaKao</button>
+                </div>
+               
+                <p>
+                    <a href="#">FORGOR YOUR PASSWORD?</a>
+                </p>
+            </fieldset>
+
+        </form>
+    </div>
+
+
+</body>
+</html>
